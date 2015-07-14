@@ -34,6 +34,7 @@ public class Main {
 			if (count%100 == 0) {
 				marcDownloadRisConvert(downloader, solrProxy, "marc_" + (count - 99) + "TO" + (count));
 				downloader.clearList();
+				Thread.sleep(10000);
 			}
 		}
 		br.close();
